@@ -33,4 +33,4 @@ class Api(object):
       # Return the games sorted by game state so those finished or in progress
       # come first. The API returns them sorted but in case this changes we
       # sort them here
-      return sorted((models.Game(game_data) for game_data in dates[0]['games']), key=lambda x: x.game_state, reverse=True)
+      return sorted((models.Game(game_data) for date in dates for game_data in date['games']), key=lambda x: x.game_state, reverse=True)
