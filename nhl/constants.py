@@ -1,0 +1,41 @@
+GAME_STATE_SCHEDULED = 1
+GAME_STATE_PREGAME = 2
+GAME_STATE_IN_PROGRESS = 3
+GAME_STATE_CRITICAL = 4
+GAME_STATE_OVER = 5
+GAME_STATE_FINAL = 6
+GAME_STATE_FINAL2 = 7
+
+TEAMS = {
+  1: {"abbr": "NJD"},
+  2: {"abbr": "NYI"},
+  3: {"abbr": "NYR"},
+  4: {"abbr": "PHI"},
+  5: {"abbr": "PIT"},
+  6: {"abbr": "BOS"},
+  7: {"abbr": "BUF"},
+  8: {"abbr": "MTL"},
+  9: {"abbr": "OTT"},
+  10: {"abbr": "TOR"},
+  12: {"abbr": "CAR"},
+  13: {"abbr": "FLA"},
+  14: {"abbr": "TBL"},
+  15: {"abbr": "WSH"},
+  16: {"abbr": "CHI"},
+  17: {"abbr": "DET"},
+  18: {"abbr": "NSH"},
+  19: {"abbr": "STL"},
+  20: {"abbr": "CGY"},
+  21: {"abbr": "COL"},
+  22: {"abbr": "EDM"},
+  23: {"abbr": "VAN"},
+  24: {"abbr": "ANA"},
+  25: {"abbr": "DAL"},
+  26: {"abbr": "LAK"},
+  28: {"abbr": "SJS"},
+  29: {"abbr": "CBJ"},
+  30: {"abbr": "MIN"},
+  52: {"abbr": "WPG"},
+  53: {"abbr": "ARI"},
+  54: {"abbr": "VGK"}
+}
