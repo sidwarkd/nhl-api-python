@@ -17,7 +17,7 @@ class Api(object):
     result = self.call('schedule', 'startDate={}&endDate={}&expand=schedule.linescore'.format(date.date().isoformat(), date.date().isoformat()))
     dates = result["dates"]
     if len(dates) == 0:
-      return None
+      return []
     else:
       # Return the games sorted by game state so those finished or in progress
       # come first. The API returns them sorted but in case this changes we
@@ -28,7 +28,7 @@ class Api(object):
     result = self.call('schedule', 'startDate={}&endDate={}&expand=schedule.linescore'.format(startDate.date().isoformat(), endDate.date().isoformat()))
     dates = result["dates"]
     if len(dates) == 0:
-      return None
+      return []
     else:
       # Return the games sorted by game state so those finished or in progress
       # come first. The API returns them sorted but in case this changes we

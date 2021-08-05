@@ -83,6 +83,11 @@ class Game(object):
       return '{} @ {} {}'.format(self.away_team_abbr, self.home_team_abbr, self.start_time_eastern)
 
   @property
+  def date_as_iso(self):
+    d = datetime.strptime(self.data['gameDate'], "%Y-%m-%dT%H:%M:%SZ")
+    return d.date().isoformat()
+
+  @property
   def start_time_eastern(self):
     d = datetime.strptime(self.data['gameDate'], "%Y-%m-%dT%H:%M:%SZ")
     d_aware = self.timezone.localize(d)
